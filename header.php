@@ -97,3 +97,5 @@
 		</header><!-- .site-header -->
 
 		<div id="content" class="site-content">
+			<div class="image-left-container"></div>
+			<div class="image-right-container"></div>

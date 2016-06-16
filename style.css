@@ -8,3 +8,66 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  dathenes
 */
+
+body {
+    background: #fff;
+}
+
+body:not(.custom-background-image):before,
+body:not(.custom-background-image):after {
+    background: transparent;
+    background: rgba(0,0,0,0);
+}
+
+div.site {
+    margin: 0;
+    background: #BD9062;
+}
+
+.site-inner {
+    background: #fff;
+}
+
+.site-header-main {
+    display: block;
+    text-align: center;
+}
+
+h1.site-title {
+    display: none;
+}
+
+p.site-description {
+    display: none;
+}
+
+#site-header-menu #site-navigation ul.primary-menu > li {
+    float: none;
+    display: inline-block;
+}
+
+#content {
+    position: relative;
+}
+
+.image-left-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    max-width: 20vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+
+.image-right-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 400px;
+    max-width: 25vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
