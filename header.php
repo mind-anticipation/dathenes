@@ -74,6 +74,23 @@
 					</div><!-- .site-header-menu -->
 				<?php endif; ?>
 			</div><!-- .site-header-main -->
+			<?php if ( is_front_page() || is_home() ) : ?>
+				<div class="front-page-candle-video">
+					<video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
+						<!-- <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm"> -->
+						<source src="<?php echo get_stylesheet_directory_uri(); ?>/assets/videos/candle-white.mp4" type="video/mp4">
+					</video>
+					<div class="video-gradient-overlay"></div>
+					<div class="video-gradient-overlay"></div>
+					<div class="video-gradient-overlay"></div>
+					<div class="video-gradient-overlay"></div>
+					<div class="video-gradient-overlay"></div>
+					<p class="front-meme">Blabla blaaksjh kasjfsadf kjsdhfsdj kjsdfgsdjfsd</p>
+				</div>
+			<?php endif; ?>
+
+			<div class="image-left-container"></div>
+			<div class="image-right-container"></div>
 
 			<?php if ( get_header_image() ) : ?>
 				<?php
@@ -97,5 +114,3 @@
 		</header><!-- .site-header -->
 
 		<div id="content" class="site-content">
-			<div class="image-left-container"></div>
-			<div class="image-right-container"></div>

@@ -11,6 +11,7 @@
 
 body {
     background: #fff;
+    padding: 68 0 100px 0;
 }
 
 body:not(.custom-background-image):before,
@@ -21,11 +22,12 @@ body:not(.custom-background-image):after {
 
 div.site {
     margin: 0;
-    background: #BD9062;
+    /*background: #BD9062;*/
 }
 
 .site-inner {
     background: #fff;
+    max-width: 100%;
 }
 
 .site-header-main {
@@ -53,8 +55,7 @@ p.site-description {
 .image-left-container {
     position: absolute;
     left: 0;
-    top: 0;
-    width: 200px;
+    top: 68px;
     max-width: 20vw;
     background-repeat: no-repeat;
     background-size: contain;
@@ -63,11 +64,77 @@ p.site-description {
 
 .image-right-container {
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 400px;
+    right: -23px;
+    top: 68px;
     max-width: 25vw;
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
+}
+
+#site-header-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 13px;
+  z-index: 999;
+}
+
+.front-page-candle-video {
+  position: relative;
+}
+
+#colophon {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.site-info a.footer-menu-item {
+  padding: 1.6em;
+}
+
+.site-info a.footer-menu-item:hover,
+.site-info a.footer-menu-item:active,
+.site-info a.footer-menu-item:focus {
+  text-decoration: none !important;
+}
+
+.video-gradient-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: none; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 37%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 37%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 37%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+p.front-meme {
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 34%;
+  font-size: 1.5em;
+}
+
+@media screen and (min-width: 56.875em) {
+  .image-left-container {
+      width: 300px;
+      max-width: 100%;
+  }
+
+  .image-right-container {
+      width: 500px;
+      max-width: 100%;
+  }
 }
